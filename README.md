@@ -12,15 +12,15 @@ No Framework used. Use SASS, a preprocessor scripting to intemperate CSS styles
 **Design**
 Photoshop
 Prototyped in Adobe XD
+ADD PROTOTYPE LINK HERE WHEN DONE
 
 **Build**
 SASS plug-in for Visual Studio Code to compile CSS
 
 **Code Example**
 ```css
-	ADD PROTOTYPE LINK HERE WHEN DONE
+	
 ```
-
 **Installation**
 SASS
 Gulp
