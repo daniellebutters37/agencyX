@@ -113,7 +113,7 @@ a {
 /*------about-----*/
 #aboutArea {
   display: grid;
-  background-color: white;
+  background-color: #fff;
   padding: 8%; }
 
 #aboutTitle {
@@ -151,7 +151,7 @@ a {
   padding: 8%; }
 
 #teamTitle {
-  color: white;
+  color: #fff;
   font-size: 2em; }
 
 .thumbnail {
@@ -171,7 +171,7 @@ a {
   margin-bottom: 2%; }
 
 .role {
-  color: white;
+  color: #fff;
   font-size: 1.3em;
   text-align: center; }
 
@@ -190,7 +190,7 @@ a {
   transform: scale(1.5); }
 
 .roleText {
-  color: white;
+  color: #fff;
   text-align: center;
   margin-bottom: 5%; }
 
@@ -200,7 +200,7 @@ a {
     padding: 8% 0% 8% 0%; }
 
   #teamTitle {
-    font-size: 3em;
+    font-size: 3.5em;
     padding-left: 18%; }
 
   #designer {
@@ -288,7 +288,7 @@ a {
   padding: 8%; }
 
 #contactTitle {
-  color: white;
+  color: #fff;
   font-size: 2em;
   padding-bottom: 5%;
   padding-bottom: 5%; }
@@ -327,8 +327,7 @@ textarea {
 #submit {
   margin-top: 5%;
   width: 40%;
-  background-color: purple;
-  color: white;
+  color: #fff;
   background-color: #590631;
   transition: all .2s ease-in-out; }
 
@@ -340,7 +339,7 @@ textarea {
     height: 850px; }
 
   #contactTitle {
-    color: white;
+    color: #fff;
     font-size: 3em; }
 
   #contactText {
@@ -369,8 +368,8 @@ textarea {
     height: 950px; }
 
   #contactTitle {
-    color: white;
-    font-size: 3em;
+    color: #fff;
+    font-size: 3.5em;
     padding: 5%; }
 
   label {
