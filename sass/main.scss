@@ -141,3 +141,158 @@ a{
 	font-size: 1em;
 	color: #590631;
 }
+
+/*------about-----*/
+
+#aboutArea {
+	display: grid;
+	background-color: white;
+	padding:8%;
+}
+
+#aboutTitle {
+	color: #590631;	;
+	font-size: 2em;
+	margin-bottom: 5%;
+}
+
+#aboutText {
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 5%;
+}
+
+
+@media (min-width: 600px) {
+	#aboutArea {
+		padding: 10%;
+	}
+
+	#aboutTitle {
+		font-size: 3em;
+	}
+
+	#aboutText {
+		font-size: 1.2em;
+	}
+
+}
+
+@media (min-width: 800px) {
+	#aboutArea {
+		padding: 10%;
+	}
+
+	#aboutTitle {
+		font-size: 3.5em;
+	}
+
+	#aboutText {
+		font-size: 1.4em;
+	}
+}
+
+/*------team-----*/
+
+#teamArea {
+	display: grid;
+	background-color: #f72b5b;
+	padding: 8%;
+}
+
+#teamTitle {
+	color: white;
+	font-size: 2em;
+}
+
+.thumbnail {
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 10%;
+	margin-bottom: 5%;
+	border: 2px solid #fff;
+}
+
+.name {
+	color: #590631;
+	font-size: 2em;
+	text-align: center;
+	margin-bottom: 2%;
+}
+
+.role {
+	color: white;
+	font-size: 1.3em;
+	text-align: center;
+}
+
+.links {
+	text-align: center;
+	padding-bottom:5%;
+	padding-top:5%
+}
+
+.icon {
+	color: #590631;
+	font-size: 1.7em;
+	padding: 5%;
+	transition: all .2s ease-in-out;
+}
+
+.icon:hover {
+	transform: scale(1.5);
+}
+
+.roleText {
+	color: white;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+
+@media (min-width: 600px) {
+
+	#teamArea {
+		grid-template-columns: 1fr 1fr;
+		padding: 8% 0% 8% 0%;
+	}
+
+	#teamTitle {
+		font-size: 3em;
+		padding-left:18%;
+	}
+
+	#designer {
+		display:grid;
+		grid-column: 1/2;
+	}
+
+	#developer {
+		display: grid;
+		grid-column: 2/4;
+	}
+
+	.name {
+		font-size: 2.2em;
+	}
+
+	.role {
+		font-size: 1.8em;
+	}
+	.links {
+		font-size: 1em;
+	}
+
+	.icon {
+		font-size: 2.5em;
+	}
+
+	.roleText {
+		font-size: 1.3em; 
+		width:80%;
+		justify-self: center;
+	}
+}
