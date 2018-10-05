@@ -126,7 +126,7 @@ a{
 
 #homeArea {
 	display: grid;
-    background-color: $bg-image;
+	@include blend-bg("../images/tile_bg.jpg", $bg-gradient);
 }
 
 #homeLogo {
@@ -203,7 +203,7 @@ a{
 
 #teamArea {
 	display: grid;
-	background-color: $bg-red;
+	@include blend-bg("../images/tile_bg.jpg", $bg-gradient);
 	padding: 8%;
 }
 
@@ -439,7 +439,7 @@ a{
 
 
 #contactArea {
-	background-color: $bg-red;
+	@include blend-bg("../images/tile_bg.jpg", $bg-gradient);
 	display: grid;
 	padding: 8%;
 }

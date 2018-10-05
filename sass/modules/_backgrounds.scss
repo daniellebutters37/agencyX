@@ -1,3 +1,15 @@
-$bg-image:url('../images/tile_bg.jpg'),
-				  linear-gradient(130deg, rgba(255,193,246,1) 40%, rgb(255,0,0) 40%),
-            	  linear-gradient(130deg, rgba(231,39,83,1), rgb(247,43,91) 100%);
+@mixin blend-bg($img, $color, $blend:multiply){
+	$img-path: url('../images/tile_bg.jpg');
+  @if $color == $bg-gradient {
+	  background: $color, $img-path;
+  } @else {
+	  background-image: $image-path;
+	  background-color: $bg-gradient;
+  }
+	  background-blend-mode: $blend;
+  }
+
+$bg-gradient:
+	-webkit-linear-gradient(130deg, rgba(255,193,246,1) 40%, rgba(255, 254, 255, 0) 40%),
+  	-webkit-linear-gradient(130deg, rgba(231,39,83,1) 50%, rgba(231, 39, 83,1) 50%);
+  
