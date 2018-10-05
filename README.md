@@ -1,7 +1,7 @@
 # agencyX
 
 **Agency X**
-We are an agency team made up of comprised of two members. Our developer, Danielle Butters, and our designer, Patricia Garcia, combine their efforts. for web design 
+We are an agency team made up of comprised of two members. Our developer, Danielle Butters, and our designer, Patricia Garcia, combine their efforts for web design 
 
 **Motivation**
 For this project, we created a one page design to be used throughout our fall term. This website will host any future projects we do and will be used as a team portfolio.
@@ -19,6 +19,13 @@ SASS plug-in for Visual Studio Code to compile CSS
 
 **Code Example**
 ```css
+@media (min-width: $tablet-width) {
+
+	#teamArea {
+		grid-template-columns: 1fr 1fr;
+		padding: 8% 0% 8% 0%;
+    }
+}
 	
 ```
 **Installation**

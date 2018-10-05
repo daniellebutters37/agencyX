@@ -419,6 +419,12 @@ a{
 
 .show-lightbox { display: block; }
 
+#portfolioImage {
+	background-color:$lightbox-bg;
+	width: 80%;
+	margin-left: 5%;
+}
+
 #imageDesc {
 	text-align: center;
 	color:$white;
