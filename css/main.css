@@ -111,7 +111,8 @@ a {
 /*------home-----*/
 #homeArea {
   display: grid;
-  background-color: url("../images/tile_bg.jpg"), linear-gradient(130deg, #ffc1f6 40%, red 40%), linear-gradient(130deg, #e72753, #f72b5b 100%);
+  background: -webkit-linear-gradient(130deg, #ffc1f6 40%, rgba(255, 254, 255, 0) 40%), -webkit-linear-gradient(130deg, #e72753 50%, #e72753 50%), url("../images/tile_bg.jpg");
+  background-blend-mode: multiply;
 }
 
 #homeLogo {
@@ -184,7 +185,8 @@ a {
 /*------team-----*/
 #teamArea {
   display: grid;
-  background-color: #f72b5b;
+  background: -webkit-linear-gradient(130deg, #ffc1f6 40%, rgba(255, 254, 255, 0) 40%), -webkit-linear-gradient(130deg, #e72753 50%, #e72753 50%), url("../images/tile_bg.jpg");
+  background-blend-mode: multiply;
   padding: 8%;
 }
 
@@ -412,7 +414,8 @@ a {
 
 /*------contact-----*/
 #contactArea {
-  background-color: #f72b5b;
+  background: -webkit-linear-gradient(130deg, #ffc1f6 40%, rgba(255, 254, 255, 0) 40%), -webkit-linear-gradient(130deg, #e72753 50%, #e72753 50%), url("../images/tile_bg.jpg");
+  background-blend-mode: multiply;
   display: grid;
   padding: 8%;
 }
