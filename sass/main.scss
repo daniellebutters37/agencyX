@@ -33,10 +33,13 @@ a{
 
 /*------navigation-----*/
 
+#hamburgerNav{
+	position: fixed;
+	z-index: 500;
+}
+
 #menuToggle {
 	width: 0;
-	position: sticky;
-	position: -webkit-sticky;
 	display: block;
 	position: relative;
 	top: 30px;
@@ -64,7 +67,7 @@ a{
 	height: 4px;
 	margin-bottom: 5px;
 	position: relative;
-	background: $white;
+	background: $dark-purple;
 	border-radius: 3px;
 	z-index: 1;
 	transform-origin: 4px 0px; 
@@ -381,19 +384,19 @@ a{
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: black;
+    background-color:$lightbox-bg;
     opacity: .98;
 }
 
 .lightbox img {
-    position: relative;
-  background-color: black;
-  left: 40px;
-  width: 80%;
+	position: relative;
+	background-color:$lightbox-bg;
+	left: 40px;
+	width: 80%;
 }
 
 .closeLightbox {
-    color: white;
+    color: $white;
     position: absolute;
     top: 20px;;
     right: 25px;
@@ -403,18 +406,24 @@ a{
 
 .closeLightbox:hover,
 .closeLightbox:focus {
-    color: #999;
+    color: $white;
     text-decoration: none;
 }
 
 .caption-container {
     text-align: center;
-    background-color: black;
+    background-color: lightbox-bg;
     padding: 2px 16px;
-    color: white;
+    color: $white;
 }
 
 .show-lightbox { display: block; }
+
+#imageDesc {
+	text-align: center;
+	color:$white;
+	margin: 5%;
+  }
 
 /*------contact-----*/
 

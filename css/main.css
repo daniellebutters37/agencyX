@@ -18,6 +18,12 @@ a {
   display: none; }
 
 /*------navigation-----*/
+
+#hamburgerNav{
+  position: fixed;
+  z-index: 500;
+}
+
 #menuToggle {
   width: 0;
   position: sticky;
@@ -47,7 +53,7 @@ a {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #fff;
+  background: #590631;
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
@@ -321,6 +327,12 @@ a {
 
 .show-lightbox {
   display: block; }
+
+#imageDesc {
+  text-align: center;
+  color:white;
+  margin: 5%;
+}
 
 /*------contact-----*/
 #contactArea {
