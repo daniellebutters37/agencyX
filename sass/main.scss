@@ -17,12 +17,12 @@ body {
 }
 
 p, h2, h1 {
-	color: #590631;	
+	color: $dark-purple;	
 }
 
 a{
   text-decoration: none;
-  color: #fff;
+  color: $white;
   font-weight: bold;
   transition: color 0.3s ease;
 }
@@ -64,7 +64,7 @@ a{
 	height: 4px;
 	margin-bottom: 5px;
 	position: relative;
-	background: #fff;
+	background: $white;
 	border-radius: 3px;
 	z-index: 1;
 	transform-origin: 4px 0px; 
@@ -84,7 +84,7 @@ a{
 #menuToggle input:checked ~ span {
   	opacity: 1;
   	transform: rotate(45deg) translate(-2px, -1px);
-  	background: #590631;
+  	background: $dark-purple;
 }
 
 #menuToggle input:checked ~ span:nth-last-child(3) {
@@ -122,7 +122,7 @@ a{
 
 #homeArea {
 	display: grid;
-	background-color: #f72b5b;
+    background-color: $bg-red;
 }
 
 #homeLogo {
@@ -139,20 +139,20 @@ a{
 	text-align: center;
 	font-weight: bold;
 	font-size: 1em;
-	color: #590631;
+	color: $dark-purple;
 }
 
 /*------about-----*/
 
 #aboutArea {
 	display: grid;
-	background-color: white;
+	background-color: $white;
 	padding:8%;
 }
 
 #aboutTitle {
-	color: #590631;	;
-	font-size: 2em;
+	color: $dark-purple;	;
+	font-size: $mobile-font-size;
 	margin-bottom: 5%;
 }
 
@@ -163,13 +163,13 @@ a{
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: $tablet-width) {
 	#aboutArea {
 		padding: 10%;
 	}
 
 	#aboutTitle {
-		font-size: 3em;
+		font-size: $tablet-font-size;
 	}
 
 	#aboutText {
@@ -178,13 +178,13 @@ a{
 
 }
 
-@media (min-width: 800px) {
+@media (min-width: $desktop-width) {
 	#aboutArea {
 		padding: 10%;
 	}
 
 	#aboutTitle {
-		font-size: 3.5em;
+		font-size: $desktop-font-size;
 	}
 
 	#aboutText {
@@ -196,13 +196,13 @@ a{
 
 #teamArea {
 	display: grid;
-	background-color: #f72b5b;
+	background-color: $bg-red;
 	padding: 8%;
 }
 
 #teamTitle {
-	color: white;
-	font-size: 2em;
+	color: $white;
+	font-size: $mobile-font-size;
 }
 
 .thumbnail {
@@ -213,18 +213,18 @@ a{
 	margin: 0 auto;
 	margin-top: 10%;
 	margin-bottom: 5%;
-	border: 2px solid #fff;
+	border: 2px solid $white;
 }
 
 .name {
-	color: #590631;
+	color: $dark-purple;
 	font-size: 2em;
 	text-align: center;
 	margin-bottom: 2%;
 }
 
 .role {
-	color: white;
+	color: $white;
 	font-size: 1.3em;
 	text-align: center;
 }
@@ -236,7 +236,7 @@ a{
 }
 
 .icon {
-	color: #590631;
+	color: $dark-purple;
 	font-size: 1.7em;
 	padding: 5%;
 	transition: all .2s ease-in-out;
@@ -247,13 +247,13 @@ a{
 }
 
 .roleText {
-	color: white;
+	color: $white;
 	text-align: center;
 	margin-bottom: 5%;
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: $tablet-width) {
 
 	#teamArea {
 		grid-template-columns: 1fr 1fr;
@@ -261,7 +261,7 @@ a{
 	}
 
 	#teamTitle {
-		font-size: 3em;
+		font-size: $desktop-font-size;
 		padding-left:18%;
 	}
 
@@ -302,13 +302,13 @@ a{
 #portfolioArea {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	background-color: #fff;
+	background-color: $white;
 	margin: 8% 4% 8% 4%;
 }
 
 #portfolioTitle {
-	color: #590631;
-	font-size: 2em;
+	color: $dark-purple;
+	font-size: $mobile-font-size;
 	padding: 8%;
 }
 
@@ -344,16 +344,16 @@ a{
 	justify-self: center;
 }
 
-@media (min-width: 600px) {
+@media (min-width: $tablet-width) {
 	#portfolioTitle {
-		font-size: 3em;
+		font-size: $tablet-font-size;
 	}
 }
 
-@media (min-width: 800px) {
+@media (min-width: $desktop-width) {
 
 	#portfolioTitle {
-		font-size: 3.5em;
+		font-size: $desktop-font-size;
 	}
 
 	#galleryDesigner {
@@ -375,14 +375,14 @@ a{
 
 
 #contactArea {
-	background-color: #f72b5b;
+	background-color: $bg-red;
 	display: grid;
 	padding: 8%;
 }
 
 #contactTitle {
-	color: white;
-	font-size: 2em;
+	color: $white;
+	font-size: $mobile-font-size;
 	padding-bottom: 5%;
 	padding-bottom: 5%;
 }
@@ -396,7 +396,7 @@ a{
 
 
 label {
-	color: #590631;
+	color: $dark-purple;
 	width: 5em;
 	margin-left: 15%;
 }
@@ -427,9 +427,8 @@ textarea {
 #submit {
 	margin-top: 5%;
 	width: 40%;
-	background-color: purple;
-	color:white;
-	background-color: #590631;
+	color:$white;
+	background-color: $dark-purple;
 	transition: all .2s ease-in-out;
 }
 
@@ -437,15 +436,15 @@ textarea {
 	transform: scale(1.2);
 }
 
-@media (min-width: 600px) {
+@media (min-width: $tablet-width) {
 
 	#contactArea {
 		height: 850px;
 	}
 
 	#contactTitle {
-		color: white;
-		font-size: 3em;
+		color: $white;
+		font-size: $tablet-font-size;
 	}
 
 	#contactText {
@@ -453,7 +452,7 @@ textarea {
 	}
 
 	label {
-		color: #590631;
+		color: $dark-purple;
 		width: 5em;
 		margin-left: 25%;
 	}
@@ -477,14 +476,14 @@ textarea {
 	}
 }
 
-@media (min-width: 800px) {
+@media (min-width: $desktop-width) {
 	#contactArea {
 		height: 950px;
 	}
 
 	#contactTitle {
-		color: white;
-		font-size: 3em;
+		color: $white;
+		font-size: $desktop-font-size;
 		padding: 5%;
 	}
 
